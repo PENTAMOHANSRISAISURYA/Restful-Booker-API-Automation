@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Restful Booker API Test Suite" verbose="2" thread-count="1">
+
+    <listeners>
+        <listener class-name="org.restpractice.utils.ExtentReportListener"/>
+    </listeners>
+
+    <test name="End-to-End Hotel Booking Workflow">
+        <classes>
+            <class name="org.restpractice.tests.AuthTest"/>
+            <class name="org.restpractice.tests.CreateBookingTest"/>
+            <class name="org.restpractice.tests.GetBookingTest"/>
+            <class name="org.restpractice.tests.UpdateBookingTest"/>
+            <class name="org.restpractice.tests.DeleteBookingTest"/>
+        </classes>
+    </test>
+
+</suite>
